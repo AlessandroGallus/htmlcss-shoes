@@ -9,7 +9,7 @@
   margin:auto;
 }
 nav{
-  position: absolute;
+  position: fixed;
   top:0;
   right:0;
 }
@@ -30,21 +30,67 @@ nav{
   margin: auto;
   text-align: center;
 }
-.box1{
-  background-color: red;
-  color:yellow;
-}
-.box2{
-  background-color: green;
-  color: yellow;
-}
-.box3{
-  background-color: yellow;
-  color: green;
-}
 .contenuto{
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
 }
+nav ul{
+  text-decoration: none;
+}
+nav ul li{
+  display: inline;
+}
+#scarpa1{
+  background-color: red;
+  color:yellow;
+}
+#scarpa2{
+  background-color: green;
+  color: yellow;
+}   
+#scarpa3{
+  background-color: yellow;
+  color: green;
+}
+html {
+  scroll-behavior:smooth;
+}
+.button{
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  display:inline-block;
+  margin:5px;
+  line-height: 40px;
+  color:black;
+  font-weight: bold;
+}
+.button:active{
+  box-shadow: 2px 2px black;
+}
+.button:active .background{
+  background-color: rgba(0,0, 0, 0.5);
+  height:40px;
+  width: 40px;
+  border-radius: 50%;
+}
+/* 
+_______________________________________
+
+  nel caso in cui si voglia che i pulsanti si "oscurino" quando il mouse ci passa sopra
+
+_______________________________________
+
+.button:hover{
+  box-shadow: 2px 2px black;
+}
+.button:hover .background{
+  background-color: rgba(0,0, 0, 0.1);
+  height:40px;
+  width: 40px;
+  border-radius: 50%;
+} */
